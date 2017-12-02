@@ -8,15 +8,17 @@ layout: default
     </header>
     <section class="wrapper style4 container">
         <ul class="posts">
-          {% for gallery in site.galleries %}
-            <li class="wrapper {% if forloop.first %} style2 {% else %} style1 {% endif %}">
-              <h2><a href="{{ gallery.url }}">{{ gallery.title }}</a></h2>
-                {{ gallery.excerpt }}
-                <section class="special">
-                    <ul class="buttons">
-                        <li><a href="{{ gallery.url }}" class="button">View more</a></li>
-                    </ul></section>
-            </li>
+          {% for post in site.posts %}
+            {% if post.gallery %}
+                <li class="wrapper {% if forloop.first %} style2 {% else %} style1 {% endif %}">
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    {{ post.excerpt }}
+                    <section class="special">
+                        <ul class="buttons">
+                            <li><a href="{{ post.url }}" class="button">Read more</a></li>
+                        </ul></section>
+                </li>
+            {% endif %}
           {% endfor %}
         </ul>
     </section>
