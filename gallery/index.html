@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article id="main">
+    <header class="special container">
+        <span class="icon fa-mobile"></span>
+        <h2>My <strong>Gallery</strong></h2>
+    </header>
+    <section class="wrapper style4 container">
+        <ul class="posts">
+          {% for gallery in site.galleries %}
+            <li class="wrapper {% if forloop.first %} style2 {% else %} style1 {% endif %}">
+              <h2><a href="{{ gallery.url }}">{{ gallery.title }}</a></h2>
+                {{ gallery.excerpt }}
+                <section class="special">
+                    <ul class="buttons">
+                        <li><a href="{{ gallery.url }}" class="button">View more</a></li>
+                    </ul></section>
+            </li>
+          {% endfor %}
+        </ul>
+    </section>
+</article>
