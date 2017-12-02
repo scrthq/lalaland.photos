@@ -1,8 +1,10 @@
 ---
+layout: default
 title: Contact
+body_class: contact
 ---
-<html>
-	{% comment %} <head>
+{% comment %} <html>
+	<head>
 		<title>Contact | {{ site.title }}</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
@@ -23,12 +25,10 @@ title: Contact
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-	</head> {% endcomment %}
-	{% include head.html %}
-	<body class="contact">
+	</head>
 	
 		<!-- Header -->
-			{% comment %} <header id="header">
+			<header id="header">
 				<h1 id="logo"><a href="index.html">LaLaLand Photos</a></h1>
 				<nav id="nav">
 					<ul>
@@ -54,8 +54,8 @@ title: Contact
 						<li><a href="#" class="button special">Sign Up</a></li>
 					</ul>
 				</nav>
-			</header> {% endcomment %}
-			{% include header.html %}
+			</header> 
+			{% include header.html %} {% endcomment %}
 		
 		<!-- Main -->
 			<article id="main">
@@ -103,9 +103,9 @@ title: Contact
 					</section>
 				
 			</article>
-
+{% comment %} 
 		<!-- Footer -->
 			{% include footer.html %}
 
 	</body>
-</html>
+</html> {% endcomment %}
