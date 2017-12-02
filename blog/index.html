@@ -8,9 +8,8 @@ layout: default
     </header>
     <section class="wrapper style4 container">
         <ul class="posts">
-          {% for post in site.posts %}
-            {% if post.gallery %}
-            {% else %}
+            {% assign posts = site.posts | where: "gallery", "false" %}
+            {% for post in posts %}
                 <li class="wrapper {% if forloop.first %} style2 {% else %} style1 {% endif %}">
                 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                     {{ post.excerpt }}
@@ -19,8 +18,7 @@ layout: default
                             <li><a href="{{ post.url }}" class="button">Read more</a></li>
                         </ul></section>
                 </li>
-            {% endif %}
-          {% endfor %}
+            {% endfor %}
         </ul>
     </section>
 </article>

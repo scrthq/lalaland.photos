@@ -12,3 +12,10 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# Default front matter
+defaults:
+  - scope:
+      type: posts
+    values:
+      gallery: false
