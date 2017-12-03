@@ -21,7 +21,6 @@ defaults:
       gallery: false
 
 permalink: /:category/:title
-highlighter: rouge
 google_analytics: UA-101420411-3
 
 social:
