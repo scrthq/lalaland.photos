@@ -13,7 +13,7 @@ layout: default
         <ul class="posts">
             {% assign posts = site.posts | where: "portfolio", "true" %}
             {% if page.title != 'Portfolio' %}
-                {% assign posts = posts | where: "tags", "{{ page.title | downcase}}" %}
+                {% assign posts = posts | where: "tags",{{ page.title | downcase}} %}
             {% endif %}
             {% for post in posts %}
                 <li class="wrapper {% if forloop.first %} style2 {% else %} style1 {% endif %}">
