@@ -1,6 +1,6 @@
 # Site settings
 title: LaLaLand Photos
-baseurl: ""
+baseurl: "/"
 first_published: "2017"
 owner: Lauren Ferrell
 url: "http://lalaland.photos"
@@ -20,7 +20,7 @@ defaults:
     values:
       gallery: false
 
-permalink: /:category/:title
+permalink: :category/:title
 google_analytics: UA-101420411-3
 
 social:
