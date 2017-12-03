@@ -1,0 +1,10 @@
+{% assign lang = page.lang | default:site.lang | default:'en' %}
+<link rel="alternate" href="{{ page.url | absolute_url }}" hreflang="{{ lang | downcase | replace:'_','-' }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+<link rel="shortcut icon" href="{{ '/images/icons/favicon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/images/icons/icon.png' | relative_url }}">
+
+{% if site.google_analytics %}
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+{% endif %}
