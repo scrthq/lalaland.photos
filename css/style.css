@@ -349,15 +349,6 @@ input[type="email"] {
     background: #7fb7d2;
 }
 
-.icon.circle.fa-facebook {
-    background: #7490c3;
-    color: white;
-}
-
-.icon.circle.fa-facebook:hover {
-    background: #829bc9;
-}
-
 .icon.circle.fa-instagram {
     background: #db6b67;
     color: white;
@@ -383,6 +374,15 @@ input[type="email"] {
 
 .icon.circle.fa-envelope-o:hover {
     background: #df93b8;
+}
+
+.icon.circle.fa-facebook {
+    background: #7490c3;
+    color: white;
+}
+
+.icon.circle.fa-facebook:hover {
+    background: #829bc9;
 }
 
 .icon.featured {
