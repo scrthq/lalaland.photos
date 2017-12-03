@@ -4,6 +4,6 @@ layout: contact
 body_class: contact
 ---
 
-## Get In Touch
+## Contact
 
-I'd love to hear your thoughts
+Interested in a quote booking a shoot? Send me a message with details on what you're looking for so we can start planning &hearts;
