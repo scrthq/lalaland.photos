@@ -23,9 +23,6 @@ defaults:
 permalink: pretty
 google_analytics: UA-101420411-3
 
-paginate: 5
-paginate_path: '/page-:num/'
-
 exclude:
   - README.md
   - node_modules
