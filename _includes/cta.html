@@ -1,0 +1,19 @@
+<section class="wrapper style1 container special">
+    <div class="row">
+        {% for cta in site.data.cta %}
+            <div class="4u">
+                <section>
+                    <header>
+                        <h3>{{ cta.header | markdownify }}</h3>
+                    </header>
+                    <p>{{ cta.body | markdownify }}</p>
+                    <footer>
+                        <ul class="buttons">
+                            <li><a href="{{ cta.button_link | default:'#' }}" class="button small">{{ cta.button_text }}</a></li>
+                        </ul>
+                    </footer>
+                </section>
+            </div>
+        {% endfor %}
+    </div>
+</section>

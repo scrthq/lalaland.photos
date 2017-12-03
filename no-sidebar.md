@@ -5,6 +5,7 @@ body_class: no-sidebar
 headline: And finally there's **No Sidebar**
 description: Where that in the center faces the nameless horrors alone -- _AND_ edited!
 featured_image: /images/pic04.jpg
+include_cta: true
 ---
 ### Dolore Amet Consequat
 
