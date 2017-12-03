@@ -2,7 +2,7 @@
 layout: post
 title:  Puptography
 date:   2017-12-02
-gallery: true
+tags: [dogs]
 ---
 <span class="image featured"><img src="/images/pic02.jpg" alt=""></span>
 

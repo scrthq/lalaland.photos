@@ -1,0 +1,30 @@
+{% assign post = include.post %}
+{% assign link_title = include.link_title %}
+
+  <article id="main">
+  <header class="special container">
+    <h2 class="post-title">
+        {% if link_title %}<a href="{{ post.url | relative_url }}">{% endif %}
+            {{ post.title }}
+        {% if link_title %}</a>{% endif %}
+    </h2>
+  </header>
+
+  <section class="style4 wrapper container">
+    {% if post.featured_image %}
+      <span class="image featured"><img src="{{ post.featured_image }}" alt=""></span>
+    {% endif %}
+    {% unless include.excerpt %}
+      {{ post.content }}
+    {% else %}
+      {{ post.excerpt }}
+      {% capture post_title %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% endcapture %}
+      {% assign text = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+      <footer>
+        <p class="read-more">
+          {{ text | replace:"<!--post_title-->", post_title }}
+        </p>
+      </footer>
+    {% endunless %}
+  </section>
+</article>

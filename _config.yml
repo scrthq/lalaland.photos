@@ -18,10 +18,40 @@ defaults:
   - scope:
       type: posts
     values:
-      gallery: false
+      portfolio: true
 
 permalink: pretty
 google_analytics: UA-101420411-3
+
+paginate: 5
+paginate_path: '/page-:num/'
+
+exclude:
+  - README.md
+  - node_modules
+  - vendor
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - _drafts/
+  - LICENSE.md
+  - NOTICE.md
+# include:
+
+plugins:
+  - jekyll-avatar
+  # - jekyll-default-layout
+  - jekyll-feed
+  # - jekyll-gist
+  # - jekyll-optional-front-matter
+  - jekyll-paginate
+  # - jekyll-readme-index
+  # - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  # - jekyll-titles-from-headings
 
 social:
   facebook: https://www.facebook.com/theonlylp
