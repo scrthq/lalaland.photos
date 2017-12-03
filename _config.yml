@@ -35,6 +35,7 @@ exclude:
   - LICENSE.md
   - NOTICE.md
   - Planning.md
+  - _excludes/
 # include:
 
 plugins:
