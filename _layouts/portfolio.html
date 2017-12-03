@@ -14,8 +14,8 @@ layout: default
             {% if page.title == 'Portfolio' %}
                 {% assign posts = site.posts | where: "portfolio", "true" %}
             {% else %}
-                {% assign slug = page.title | downcase%}
-                {% assign posts = posts | where_exp: "item","item.portfolio == 'true' and item.tags contains '{{ slug }}'" %}
+                {% assign slug = page.title | downcase %}
+                {% assign posts = posts | where_exp: "item","item.portfolio == 'true' and item.tags contains {{ slug }}" %}
             {% endif %}
             {% for post in posts %}
                 <li class="wrapper {% if forloop.first %} style2 {% else %} style1 {% endif %}">
