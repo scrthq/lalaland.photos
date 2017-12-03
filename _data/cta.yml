@@ -1,19 +1,16 @@
-one:
-  header: This is Something
+- header: This is Something
   body: |
     Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
   button_text: Learn More
   button_link: 
 
-two:
-  header: Also Something
+- header: Also Something
   body: |
     Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
   button_text: Learn More
   button_link: 
 
-three:
-  header: This is Something
+- header: This is Something
   body: |
     Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
   button_text: Learn More
