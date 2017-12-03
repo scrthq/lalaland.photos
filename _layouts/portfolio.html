@@ -11,7 +11,7 @@ layout: default
     </header>
     <section class="wrapper style4 container">
         <ul class="posts">
-            {% if page.title != 'Portfolio' %}
+            {% if page.title == 'Portfolio' %}
                 {% assign posts = site.posts | where: "portfolio", "true" %}
             {% else %}
                 {% assign slug = page.title | downcase%}
