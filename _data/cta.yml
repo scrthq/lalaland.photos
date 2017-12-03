@@ -1,20 +1,18 @@
-
-first:
+one:
   header: This is Something
   body: |
     Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
   button_text: Learn More
   button_link: 
 
-# Another author
-second:
+two:
   header: Also Something
   body: |
     Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
   button_text: Learn More
   button_link: 
 
-third:
+three:
   header: This is Something
   body: |
     Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
