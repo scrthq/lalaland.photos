@@ -11,11 +11,10 @@ layout: default
     </header>
     <section class="wrapper style4 container">
         <ul class="posts">
-            {% if page.title == 'Portfolio' %}
-                {% assign posts = site.posts | where: "portfolio", "true" %}
-            {% else %}
+            {% assign posts = site.posts | where: "portfolio", "true" %}
+            {% if page.title != 'Portfolio' %}
                 {% assign fttag = page.title | downcase %}
-                {% assign posts = site.posts | where: "tags", fttag %}
+                {% assign posts = posts | where: "tags", fttag %}
             {% endif %}
             {% for post in posts %}
                 <li class="wrapper {% if forloop.first %} style2 {% else %} style1 {% endif %}">
