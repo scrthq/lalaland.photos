@@ -23,12 +23,12 @@
 				},
 				topPanel: {
 					states: '/global/wide/normal/narrow/narrower/mobile',
-					position: 'top-center',
-					side: 'top',
+					position: 'top-left',
+					side: 'left',
 					hidden: true,
-					animation: 'pushY',
-					width: '100%',
-					height: 275,
+					animation: 'pushX',
+					width: '80%',
+					height: '100%',
 					html: '<nav data-action="navList" data-args="nav"></nav>',
 					clickToHide: true,
 					swipeToHide: false,
@@ -36,7 +36,7 @@
 				},
 				topButton: {
 					states: '/global/wide/normal/narrow/narrower/mobile',
-					position: 'top-center',
+					position: 'top-left',
 					width: 120,
 					height: 50,
 					html: '<span class="toggle" data-action="toggleLayer" data-args="topPanel"></span>'
@@ -99,7 +99,7 @@
 		// Dropdowns.
 			$('#nav > ul').dropotron({
 				mode: 'fade',
-				noOpenerFade: true,
+                noOpenerFade: true,
 				expandMode: (skel.vars.isTouch ? 'click' : 'hover')
 			});
 
