@@ -26,7 +26,7 @@
 					position: 'top-left',
 					side: 'left',
 					hidden: true,
-					animation: 'overlayX',
+					animation: 'revealX',
 					width: '50%',
 					height: '100%',
 					html: '<nav data-action="navList" data-args="nav"></nav>',
