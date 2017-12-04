@@ -1090,7 +1090,7 @@ body.index #main {
 
 #topButton .toggle:before {
     color: white;
-    content: 'MENU';
+    content: '\f03c';
     font-size: 0.75em;
     height: 30px;
     left: 0;
@@ -1134,7 +1134,7 @@ body.index #main {
 
 #sideButton .toggle:before {
     color: white;
-    content: 'MENU';
+    content: '\f03c';
     font-size: 1em;
     height: 40px;
     left: 10px;
