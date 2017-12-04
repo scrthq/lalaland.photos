@@ -31,7 +31,7 @@
 					height: '100%',
 					html: '<nav data-action="navList" data-args="nav"></nav>',
 					clickToHide: true,
-					swipeToHide: false,
+					swipeToHide: true,
 					orientation: 'vertical'
 				},
 				topButton: {
