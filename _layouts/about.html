@@ -6,15 +6,13 @@ layout: default
 
 <article id="main">
     <header class="special container">
-        {% if author.picture %}
-            <span class="icon"><img src="{{ author.picture }}" /></span>
-        {% else %}
-            <span class="icon fa-pencil"></span>
-        {% endif %}
-        <h1 class="page-title hr">{{ page.title }}</h1>
+        <span class="icon fa-pencil"></span>
+        <h2 class="post-title">{{ page.title }}</h2>
     </header>
-
-    <section class="style2 wrapper container">
+    <section class="style4 wrapper container">
+        {% if author.picture %}
+            <span class="image featured"><img src="{{ author.picture }}" alt=""></span>
+        {% endif %}
         {{ author.about | markdownify }}
         {{ content }}
     </section>
