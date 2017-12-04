@@ -14,6 +14,11 @@ layout: default
         {% if author.picture %}
             <span class="image featured"><img src="{{ author.picture }}" alt=""></span>
         {% endif %}
+        {% if page.featured_images %}
+            {% for img in page.featured_images %}
+                <span class="image featured"><img src="{{ img }}" alt=""></span>
+            {% endfor %}
+        {% endif %}
         {{ content }}
     </section>
 </article>
