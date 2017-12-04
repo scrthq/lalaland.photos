@@ -1105,7 +1105,7 @@ body.index #main {
 #topButton .toggle:after {
     background: rgba(163, 169, 170, 0.75);
     border-radius: 0 0 4px 4px;
-    content: '';
+    content: '\f03b';
     height: 30px;
     left: 50%;
     margin-left: -40px;
@@ -1149,7 +1149,7 @@ body.index #main {
 #sideButton .toggle:after {
     background: rgba(163, 169, 170, 0.75);
     border-radius: 2px;
-    content: '';
+    content: '\f03b';
     height: 40px;
     left: 10px;
     position: absolute;
