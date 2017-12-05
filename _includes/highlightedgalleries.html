@@ -1,0 +1,26 @@
+<section class="wrapper style3 container special">
+    <header class="major">
+        <h2>Highlighted <strong>Galleries</strong></h2>
+    </header>
+    {% for row in site.data.highlightedgalleries %}
+        <div class="row">
+            {% for item in row %}
+                <div class="6u">
+                    <section>
+                        <a href="#" class="image featured"><img src="{{ item.featured_image }}" alt="" /></a>
+                        <header>
+                            <h3>{{ item.headline | markdownify }}</h3>
+                        </header>
+                        <p>{{ item.headline | markdownify }}</p>
+                    </section>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+    <footer class="major">
+        <ul class="buttons">
+            <li><a href="/portfolio" class="button">Portfolio</a></li>
+        </ul>
+    </footer>
+
+</section>
