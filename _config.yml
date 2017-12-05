@@ -20,6 +20,7 @@ defaults:
     values:
       portfolio: true
       modal: true
+      icon: fa-camera
 
 permalink: pretty
 google_analytics: UA-101420411-3
