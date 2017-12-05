@@ -19,6 +19,7 @@ defaults:
       type: posts
     values:
       portfolio: true
+      modal: true
 
 permalink: pretty
 google_analytics: UA-101420411-3
@@ -36,7 +37,7 @@ exclude:
   - NOTICE.md
   - Planning.md
   - _excludes/
-  
+
 # include:
 
 plugins:

@@ -12,11 +12,11 @@ layout: default
     </header>
     <section class="style3 wrapper container">
         {% if author.picture %}
-            <span class="image featured"><img src="{{ author.picture }}" alt=""></span>
+            <span class="image featured"><img id="myImg" src="{{ author.picture }}" alt=""></span>
         {% endif %}
         {% if page.featured_images %}
             {% for img in page.featured_images %}
-                <span class="image featured"><img id="myImg" src="{{ img }}" alt="Maternity Shoot, 2017"></span>
+                <span class="image featured"><img id="myImg" src="{{ img }}" alt=""></span>
             {% endfor %}
         {% endif %}
         {{ content }}

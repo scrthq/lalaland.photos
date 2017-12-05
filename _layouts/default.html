@@ -10,7 +10,9 @@
         {{ content }}
     </div>
     {% include footer.html %}
-
+    {% if page.modal %}
+      {% include featured-image-modal.html %}
+    {% endif %}
   </body>
 
 </html>
