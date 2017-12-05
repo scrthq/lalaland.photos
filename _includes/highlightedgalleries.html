@@ -7,11 +7,13 @@
             {% for item in row %}
                 <div class="6u">
                     <section>
-                        <a href="#" class="image featured"><img src="{{ item.featured_image }}" alt="" /></a>
+                        <a href="{{ item.link }}" class="image featured"><img src="{{ item.featured_image }}" alt="" /></a>
                         <header>
-                            <h3>{{ item.headline | markdownify }}</h3>
+                            <a href="{{ item.link }}"><h3>{{ item.headline | markdownify }}</h3></a>
                         </header>
-                        <p>{{ item.headline | markdownify }}</p>
+                        {% if item.body %}
+                            <p>{{ item.body | markdownify }}</p>
+                        {% endif %}
                     </section>
                 </div>
             {% endfor %}
