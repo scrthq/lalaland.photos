@@ -10,9 +10,12 @@ layout: default
 
   <section class="style4 wrapper container">
     {% if page.featured_image %}
-      <span class="image featured"><img id="myImg" src="{{ page.featured_image }}" alt=""></span>
+      <span class="image featured"><img id="myImg" src="{{ page.featured_image }}" alt="LaLaLand Photos"></span>
     {% endif %}
     {{ content }}
+    {% if page.drive_id %}
+      <iframe src="https://drive.google.com/a/ferrell.io/embeddedfolderview?id={{ page.drive_id }}#{{ page.drive_display | default:'grid' }}" style="width:100%; height:600px; border:0;"></iframe>
+    {% endif %}
   </section>
     
     <footer>
