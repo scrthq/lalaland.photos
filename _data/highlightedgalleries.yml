@@ -6,17 +6,14 @@
   - featured_image: /images/pic01.jpg
     headline: A Really Fast Train
     link: 
-    body: |
-      Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.
+    body: 
 
 - - featured_image: /images/pic04.jpg
     headline: And Another Train
     link: 
-    body: |
-      Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.
+    body: 
 
   - featured_image: /images/pic02.jpg
     headline: An Airport Terminal
     link: 
-    body: |
-      Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
+    body: 
