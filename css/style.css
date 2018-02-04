@@ -686,6 +686,11 @@ input[type="reset"].small,
     }
 }
 
+#logo h1 {
+    font-family: 'Pacifico', cursive;
+    text-transform: lowercase;
+}
+
 #header {
     background: white;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
@@ -703,7 +708,6 @@ input[type="reset"].small,
 #header h1 {
     font-weight: 900;
     margin: 0;
-    font-family: 'Pacifico', cursive;
 }
 
 #header h1 span {
