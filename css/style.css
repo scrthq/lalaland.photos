@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 /*
 	Twenty by HTML5 UP
@@ -702,6 +703,7 @@ input[type="reset"].small,
 #header h1 {
     font-weight: 900;
     margin: 0;
+    font-family: 'Pacifico', cursive;
 }
 
 #header h1 span {
